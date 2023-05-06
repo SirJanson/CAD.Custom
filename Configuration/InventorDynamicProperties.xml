@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DynamicProperties>
+  <DynamicPropertiesCategory Category="Konstruktion">
+    <DynamicProperty>Beschreibung</DynamicProperty>
+    <DynamicProperty>Fertigung genehmigt von</DynamicProperty>
+    <DynamicProperty>Konstruktion genehmigt von</DynamicProperty>
+    <DynamicProperty>Material</DynamicProperty>
+    <DynamicProperty>Geschätzte Kosten</DynamicProperty>
+    <DynamicProperty>Bestandsnummer</DynamicProperty>
+    <DynamicProperty>Letzte Aktualisierung mit</DynamicProperty>
+    <DynamicProperty>Konstrukteur</DynamicProperty>
+    <DynamicProperty>Ingenieur</DynamicProperty>
+    <DynamicProperty>Geprüft von</DynamicProperty>
+    <DynamicProperty>Autor</DynamicProperty>
+    <DynamicProperty>Schlüsselwörter</DynamicProperty>
+    <DynamicProperty>Titel</DynamicProperty>
+    <DynamicProperty>Thema</DynamicProperty>
+    <DynamicProperty>Kommentare</DynamicProperty>
+    <DynamicProperty>Bauteilnummer</DynamicProperty>
+    <DynamicProperty>Projekt</DynamicProperty>
+    <DynamicProperty>Manager</DynamicProperty>
+    <DynamicProperty>Firma</DynamicProperty>
+  </DynamicPropertiesCategory>
+</DynamicProperties>
