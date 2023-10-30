@@ -1,6 +1,14 @@
 ﻿
 function InitializeWindow
 {
+
+	$dsdiag.ShowLog()
+	$dsdiag.clear()
+<# 
+	$dsdiag.Trace("Breakpoint: Intialize Window starts now!")
+	$_stop = "Breakpoint: Initalize Window starts now"
+	$dsdiag.Inspect("_stop") #>
+
 	#begin rules applying commonly
     $dsWindow.Title = SetWindowTitle		
     InitializeCategory
@@ -21,6 +29,10 @@ function InitializeWindow
 		}
 	}
 	$global:expandBreadCrumb = $true	
+
+<# 	$dsdiag.Trace("Breakpoint: Window initalized")
+	$_stop = "Breakpoint:  Window initalized"
+	$dsdiag.Inspect("_stop") #>
 }
 
 function AddinLoaded
@@ -35,23 +47,42 @@ function AddinUnloaded
 
 function InitializeCategory()
 {
+	$dsdiag.trace("Ini Category")
+	$dsdiag.trace($Prop["TCC Kategorie"].value)
     if ($Prop["_CreateMode"].Value)
     {
+		$dsdiag.trace("IniCat	Create Mode")
+		$dsdiag.trace("Save copy as = " + $Prop["_SaveCopyAsMode"].Value)
 		if (-not $Prop["_SaveCopyAsMode"].Value)
 		{
+			#$dsdiag.trace("Save copy as")
             $Prop["_Category"].Value = $UIString["CAT1"]
         }
+		$Prop["_Category"].value = $Prop["TCC Kategorie"].value
     }
+<# 	$dsdiag.trace("Breakpoint: Category Initialized")
+	$_stop="Breakpoint Stop: Category Initialized"
+	$dsdiag.inspect("_stop") #>
 }
 
 function InitializeNumSchm()
 {
+
+	$dsdiag.trace("Ini NumSchem")
+	#$dsdiag.trace($Prop["TCC Kategorie"].value)
+	#$_stop="Breakpoint Stop: Ini NumSchem"
+	#$dsdiag.trace($_.name)
+	#$dsdiag.inspect("_stop")
 	#Adopted from a DocumentService call, which always pulls FILE class numbering schemes
 	$global:numSchems = @($vault.NumberingService.GetNumberingSchemes('FILE', 'Activated')) 
     if ($Prop["_CreateMode"].Value)
     {
+		#$dsdiag.trace("Breakpoint: Create Mode")
 		if (-not $Prop["_SaveCopyAsMode"].Value)
 		{
+			
+			$Prop["_NumSchm"].Value = "Konstruktionsdateien"
+
 			$Prop["_Category"].add_PropertyChanged({
 				if ($_.PropertyName -eq "Value")
 				{
@@ -59,8 +90,15 @@ function InitializeNumSchm()
                     if($numSchm)
 					{
                         $Prop["_NumSchm"].Value = $numSchm.Name
-                    }
-				}	
+						$dsdiag.trace("Breakpoint: NumSchem true")
+					}
+					else
+					{
+						<# Action when all if and elseif conditions are false #>
+						$dsdiag.trace("Breakpoint: NumSchem False")
+						$Prop["_NumSchm"].Value = "Konstruktionsdateien"
+					}
+                }
 			})
         }
 		else
@@ -152,7 +190,14 @@ function GetNumSchms
 
 function GetCategories
 {
+ 	$dsdiag.trace("Get Categories")
+	#$_stop="Breakpoint Stop: Get Categories"
+	#$dsdiag.inspect("_stop")
+	
+	#$dsdiag.trace($Prop["Title"].value)
+	
 	return $Prop["_Category"].ListValues
+
 }
 
 function OnPostCloseDialog

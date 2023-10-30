@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DynamicProperties>
+  <DynamicPropertiesCategory Category="2DKon">
+    <DynamicProperty>Kommentare</DynamicProperty>
+    <DynamicProperty>Schlüsselwörter</DynamicProperty>
+    <DynamicProperty>Titel</DynamicProperty>
+  </DynamicPropertiesCategory>
+</DynamicProperties>

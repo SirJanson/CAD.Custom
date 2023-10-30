@@ -2,23 +2,112 @@
 <DynamicProperties>
   <DynamicPropertiesCategory Category="Konstruktion">
     <DynamicProperty>Beschreibung</DynamicProperty>
-    <DynamicProperty>Fertigung genehmigt von</DynamicProperty>
-    <DynamicProperty>Konstruktion genehmigt von</DynamicProperty>
-    <DynamicProperty>Material</DynamicProperty>
-    <DynamicProperty>Geschätzte Kosten</DynamicProperty>
-    <DynamicProperty>Bestandsnummer</DynamicProperty>
-    <DynamicProperty>Letzte Aktualisierung mit</DynamicProperty>
-    <DynamicProperty>Konstrukteur</DynamicProperty>
-    <DynamicProperty>Ingenieur</DynamicProperty>
-    <DynamicProperty>Geprüft von</DynamicProperty>
-    <DynamicProperty>Autor</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Fertigung genehmigt von</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Konstruktion genehmigt von</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Material</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Geschätzte Kosten</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Bestandsnummer</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Letzte Aktualisierung mit</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Konstrukteur</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Ingenieur</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Geprüft von</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Autor</DynamicProperty>
     <DynamicProperty>Schlüsselwörter</DynamicProperty>
     <DynamicProperty>Titel</DynamicProperty>
     <DynamicProperty>Thema</DynamicProperty>
     <DynamicProperty>Kommentare</DynamicProperty>
-    <DynamicProperty>Bauteilnummer</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Bauteilnummer</DynamicProperty>
     <DynamicProperty>Projekt</DynamicProperty>
-    <DynamicProperty>Manager</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Manager</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Firma</DynamicProperty>
+  </DynamicPropertiesCategory>
+  <DynamicPropertiesCategory Category="Fertigungsteil">
+    <DynamicProperty>Titel</DynamicProperty>
+    <DynamicProperty>Beschreibung</DynamicProperty>
+    <DynamicProperty>Projekt</DynamicProperty>
+    <DynamicProperty>Material</DynamicProperty>
+    <DynamicProperty>Kommentare</DynamicProperty>
+    <DynamicProperty>Schlüsselwörter</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Letzte Aktualisierung mit</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Einheit-Kennung</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Masse</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Einheit</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Autor</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Bauteilnummer</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Erstellungsdatum</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Firma</DynamicProperty>
+  </DynamicPropertiesCategory>
+  <DynamicPropertiesCategory Category="Baugruppe">
+    <DynamicProperty Hidden="TRUE">Letzte Aktualisierung mit</DynamicProperty>
+    <DynamicProperty>Beschreibung</DynamicProperty>
+    <DynamicProperty>Projekt</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Einheit</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Masse</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Einheit-Kennung</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Bauteilnummer</DynamicProperty>
+    <DynamicProperty>Schlüsselwörter</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Autor</DynamicProperty>
+    <DynamicProperty>Titel</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Erstellungsdatum</DynamicProperty>
+    <DynamicProperty>Firma</DynamicProperty>
+    <DynamicProperty>Kommentare</DynamicProperty>
+  </DynamicPropertiesCategory>
+  <DynamicPropertiesCategory Category="Blechteil">
+    <DynamicProperty>Titel</DynamicProperty>
+    <DynamicProperty>Beschreibung</DynamicProperty>
+    <DynamicProperty>Projekt</DynamicProperty>
+    <DynamicProperty>Material</DynamicProperty>
+    <DynamicProperty>Kommentare</DynamicProperty>
+    <DynamicProperty>Schlüsselwörter</DynamicProperty>
+    <DynamicProperty>Masse</DynamicProperty>
+    <DynamicProperty>Einheit</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">TCC Blech Abwicklung Fläche</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">TCC Blech Abwicklung Breite</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">TCC Blech Abwicklung Länge</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Letzte Aktualisierung mit</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Einheit-Kennung</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">TCC ist Blech</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Autor</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Firma</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Erstellungsdatum</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Bauteilnummer</DynamicProperty>
+  </DynamicPropertiesCategory>
+  <DynamicPropertiesCategory Category="Bauteil">
+    <DynamicProperty>Titel</DynamicProperty>
+    <DynamicProperty>Beschreibung</DynamicProperty>
+    <DynamicProperty>Projekt</DynamicProperty>
+    <DynamicProperty>Material</DynamicProperty>
+    <DynamicProperty>Kommentare</DynamicProperty>
+    <DynamicProperty>Schlüsselwörter</DynamicProperty>
+    <DynamicProperty>Masse</DynamicProperty>
+    <DynamicProperty>Einheit</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Letzte Aktualisierung mit</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Einheit-Kennung</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Autor</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Bauteilnummer</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Erstellungsdatum</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Firma</DynamicProperty>
+  </DynamicPropertiesCategory>
+  <DynamicPropertiesCategory Category="Zeichnung">
+    <DynamicProperty Hidden="TRUE">Bauteilnummer</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Erstellungsdatum</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Letzte Aktualisierung mit</DynamicProperty>
+    <DynamicProperty>Titel</DynamicProperty>
+    <DynamicProperty>Beschreibung</DynamicProperty>
+    <DynamicProperty>Projekt</DynamicProperty>
+    <DynamicProperty>Autor</DynamicProperty>
+    <DynamicProperty>Schlüsselwörter</DynamicProperty>
+    <DynamicProperty Hidden="TRUE">Firma</DynamicProperty>
+    <DynamicProperty>Kommentare</DynamicProperty>
+  </DynamicPropertiesCategory>
+  <DynamicPropertiesCategory Category="Kaufteil">
+    <DynamicProperty>Material</DynamicProperty>
+    <DynamicProperty>Bauteilnummer</DynamicProperty>
+    <DynamicProperty>Letzte Aktualisierung mit</DynamicProperty>
+    <DynamicProperty>Beschreibung</DynamicProperty>
+    <DynamicProperty>Autor</DynamicProperty>
+    <DynamicProperty>Titel</DynamicProperty>
+    <DynamicProperty>Erstellungsdatum</DynamicProperty>
     <DynamicProperty>Firma</DynamicProperty>
   </DynamicPropertiesCategory>
 </DynamicProperties>
